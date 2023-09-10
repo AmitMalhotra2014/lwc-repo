@@ -1,0 +1,6 @@
+<aura:component >
+    <c:testchild fromparent="From Parent to Child"/>
+    <aura:handler name="init" value="{!this}" action="{!c.haha}"/>
+    <aura:handler name="myevt" event="c:testevent" action="{!c.handleEvent}"/>
+    
+</aura:component>

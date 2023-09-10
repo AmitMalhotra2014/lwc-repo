@@ -1,0 +1,5 @@
+<design:component>
+    
+    <design:attribute name="headingField" datasource="Student Registration Form, New Form"/>
+	
+</design:component>

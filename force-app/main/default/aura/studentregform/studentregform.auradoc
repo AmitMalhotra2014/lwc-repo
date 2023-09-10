@@ -1,0 +1,9 @@
+<aura:documentation>
+	
+    <aura:description>This Component is used to get the Value for Student</aura:description>
+    
+    
+	<aura:example name="StudentName" ref="c:studentregform" label="Student Registration Form for new Student">
+		Example Description -This Component is used to get the Value for Student
+	</aura:example>
+</aura:documentation>

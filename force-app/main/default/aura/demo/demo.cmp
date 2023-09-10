@@ -1,0 +1,33 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute type="String"  name="text" default="haha"  />
+    <aura:attribute type="Set" name="text1" default="['a','b']" />
+    <aura:attribute type="Map" name="text2" default="{a:'a',b:'b'}" />
+    <aura:attribute type="Object" name="text3" default="{'k1':'val1','k2':'val2'}" />
+   
+    
+    <div>
+    
+        <p>
+            {!v.text} <br></br>
+        	Welcome to Lightning Aura Component Development course in detail.
+        	{!v.Text1}
+            {!v.text2}
+            {!v.text3}
+            
+            <aura:iteration items="{!v.text1}" var="l" indexVar="index">
+            	Value =  {!l}
+            </aura:iteration>
+            
+            <aura:if isTrue="False">
+                Amit malhotra
+            
+            </aura:if>
+            
+            
+            
+            
+        </p>
+    	
+    </div>
+    
+</aura:component>

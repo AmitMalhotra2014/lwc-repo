@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:registerEvent name="myevt" type="c:testevent"/>   
+    <aura:attribute name="fromparent" type="String" default=""/>
+    <lightning:button name="fireEvt" label="Fire Event" onclick="{!c.mymethod}"/>
+    
+    {!v.fromparent}
+	
+</aura:component>

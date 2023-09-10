@@ -1,0 +1,30 @@
+<aura:component controller="StudentRecords" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+
+    
+    <aura:attribute type="String" name="sName" default=""/>
+    <aura:attribute type="String" name="recordId" default=""/>
+    <aura:attribute type="String" name="Name" default=""/>
+    <aura:attribute type="String" name="sFatherName" default=""/>
+     <aura:attribute type="String" name="headingField" default="Student Registration Form"/>
+    <div class="blink">
+    	hello
+    </div>
+    <div class="slds-text-heading_large">
+        <div class="slds-text-align_center">
+        
+    			{!v.headingField}
+        </div>
+    	
+    </div>
+    
+    <div class="slds-align_absolute-center">
+    <div class="slds-size_3-of-8">
+       Record Id =  {!v.recordId}
+       Record Name = {!v.Name}
+        <lightning:input aura:id="myId" type="text" label="{!$Label.c.Save}" name="stuName"  value="{!v.sName}" placeholder="Enter Student Name"/>
+        <lightning:input type="text" name="stuFName" label="Enter Father Name"  value="{!v.sFatherName}" required="true" maxlength="5"/>
+        <lightning:button label="Click Me" name="myButton" onclick="{!c.myMethod}"></lightning:button>
+    </div>
+    </div>
+    
+</aura:component>
